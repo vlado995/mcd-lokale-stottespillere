@@ -14,17 +14,19 @@
 /**********************************************************/
 
 @media (min-width: 1921px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    padding: 200px 20%;
+  }
 
-    .container {
-        display: flex;
-        flex-direction: row;
-        padding: 200px 20%;
-    }
+  .video-header-content {
+    left: 20%;
+  }
 
-    .video-header-content { left: 20%; }
-
-    .bg-image-section { height: 600px; }
-
+  .bg-image-section {
+    height: 600px;
+  }
 }
 
 /**********************************************************/
@@ -36,21 +38,22 @@
 /**********************************************************/
 
 @media (max-width: 1200px) {
+  h1 {
+    font-size: 70px;
+  }
 
-    h1 { font-size: 70px; }
+  .video-header-content h1:nth-child(2) {
+    margin-top: -19px;
+  }
 
-    .video-header-content h1:nth-child(2) 
-    { 
-        margin-top: -19px;
-    }
+  .word-flip span {
+    left: 172px;
+    text-indent: 14px;
+  }
 
-    .word-flip span { 
-        left: 172px;
-        text-indent: 14px; 
-    }
-
-    .profile { min-width: 480px; }
-
+  .profile {
+    min-width: 480px;
+  }
 }
 
 /**********************************************************/
@@ -62,133 +65,164 @@
 /**********************************************************/
 
 @media (max-width: 980px) {
+  /*** Common CSS ***/
 
-    /*** Common CSS ***/
+  .container {
+    padding: 120px 6%;
+  }
 
-    .container { padding: 120px 6%; }
+  .video-showcase-close {
+    top: 20px;
+    right: 20px;
+    width: 28px;
+    height: 28px;
+  }
 
-    .video-showcase-close {
-        top: 20px;
-        right: 20px;
-        width: 28px;
-        height: 28px;
-    }
+  .video-showcase-close img {
+    width: 28px;
+  }
 
-        .video-showcase-close img { width: 28px; }
+  h1 {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 34px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  h5 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 18px;
+  }
 
-    h1 { font-size: 60px; }
-    h2 { font-size: 34px; }
-    h4 { font-size: 20px; }
-    h5 { font-size: 18px; }
-    p { font-size: 18px; }
+  /*** End - Common CSS ***/
 
-    /*** End - Common CSS ***/
+  /*** Video Header ***/
 
-    /*** Video Header ***/
+  .video-header,
+  #headerVideo {
+    height: 500px !important;
+  }
 
-    .video-header,
-    #headerVideo 
-    { 
-        height: 500px !important; 
-    }
+  .video-header-content {
+    top: 70px;
+    left: 6%;
+  }
 
-    .video-header-content { 
-        top: 70px;
-        left: 6%; 
-    }
+  .video-header-content h1:nth-child(2) {
+    margin-top: -16px;
+  }
 
-        .video-header-content h1:nth-child(2) 
-        { 
-            margin-top: -16px;
-        }
-        
-        .video-header-content .subheading { 
-            max-width: 550px;
-            font-size: 20px;
-        }
-    
-    .word-flip span { 
-        left: 148px;
-        width: 480px; 
-        text-indent: 12px;
-    }
+  .video-header-content .subheading {
+    max-width: 550px;
+    font-size: 20px;
+  }
 
-    /*** End - Video Header ***/
+  .word-flip span {
+    left: 148px;
+    width: 480px;
+    text-indent: 12px;
+  }
 
-    /*** Video Carousel ***/
+  /*** End - Video Header ***/
 
-    .video-carousel-container {
-        width: 640px;
-        height: 360px;
-        padding: 0 68px;
-    }
-    
-        .carousel-slide iframe { height: 360px; }
+  /*** Video Carousel ***/
 
-    .video-carousel-btn img { width: 28px; }
+  .video-carousel-container {
+    width: 640px;
+    height: 360px;
+    padding: 0 68px;
+  }
 
-    .btn-left { left: 30px; }
-    .btn-right { right: 30px; }
+  .carousel-slide iframe {
+    height: 360px;
+  }
 
-    .video-carousel-nav { width: calc(100% - 136px); }
+  .video-carousel-btn img {
+    width: 28px;
+  }
 
-        .video-carousel-nav .active {
-            width: 16px;
-            height: 16px;
-        }
+  .btn-left {
+    left: 30px;
+  }
+  .btn-right {
+    right: 30px;
+  }
 
-    .carousel-indicator {
-        width: 15px;
-        height: 15px;
-    }
+  .video-carousel-nav {
+    width: calc(100% - 136px);
+  }
 
-    /*** End - Video Carousel ***/
+  .video-carousel-nav .active {
+    width: 16px;
+    height: 16px;
+  }
 
-    /*** Profile Section ***/
+  .carousel-indicator {
+    width: 15px;
+    height: 15px;
+  }
 
-    .play-btn-header img { width: 44px; }
-    .play-btn-header span { font-size: 22px; }
+  /*** End - Video Carousel ***/
 
-    .profile {
-        min-width: 400px;
-        min-height: 225px;
-    }
-    
-        .profile img {
-            width: 225px;
-            height: 225px;
-        }
-    
-    .profile-info {
-        top: 130px;
-        width: 180px;
-    }
-    
-    #profileInfo1,
-    #profileInfo3 
-    {
-        left: 160px;
-    }
-    
-    #profileInfo2 { right: 160px; }
+  /*** Profile Section ***/
 
-    .play-btn-profile { margin-top: 30px; }
-        .play-btn-profile img { width: 28px; }
-        .play-btn-profile span { font-size: 18px; }
+  .play-btn-header img {
+    width: 44px;
+  }
+  .play-btn-header span {
+    font-size: 22px;
+  }
 
-    /*** End - Profile Section ***/
-    
-    .video-wrapper {
-        width: 640px;
-        height: 360px;
-        padding: 0 68px;
-    }
+  .profile {
+    min-width: 400px;
+    min-height: 225px;
+  }
 
-    .bg-section5 {
-        background-image: url("../assets/bg_multi_small.jpg");
-        background-position: left;
-    }
+  .profile img {
+    width: 225px;
+    height: 225px;
+  }
 
+  .profile-info {
+    top: 130px;
+    width: 180px;
+  }
+
+  #profileInfo1,
+  #profileInfo3 {
+    left: 160px;
+  }
+
+  #profileInfo2 {
+    right: 160px;
+  }
+
+  .play-btn-profile {
+    margin-top: 30px;
+  }
+  .play-btn-profile img {
+    width: 28px;
+  }
+  .play-btn-profile span {
+    font-size: 18px;
+  }
+
+  /*** End - Profile Section ***/
+
+  .video-wrapper {
+    width: 640px;
+    height: 360px;
+    padding: 0 68px;
+  }
+
+  .bg-section5 {
+    background-image: url("../assets/bg_multi_small.jpg");
+    background-position: left;
+  }
 }
 
 /**********************************************************/
@@ -200,94 +234,122 @@
 /**********************************************************/
 
 @media (max-width: 767px) {
+  /*** Common CSS ***/
 
-    /*** Common CSS ***/
+  .container {
+    flex-direction: column;
+  }
 
-    .container { flex-direction: column; }
+  .video-showcase-close {
+    top: 15px;
+    right: 15px;
+    width: 24px;
+    height: 24px;
+  }
 
-    .video-showcase-close {
-        top: 15px;
-        right: 15px;
-        width: 24px;
-        height: 24px;
-    }
+  .video-showcase-close img {
+    width: 24px;
+  }
 
-        .video-showcase-close img { width: 24px; }
+  h1 {
+    font-size: 42px;
+  }
+  h2 {
+    font-size: 28px;
+  }
 
-    h1 { font-size: 42px; }
-    h2 { font-size: 28px; }
+  /*** End - Common CSS ***/
 
-    /*** End - Common CSS ***/
+  /*** Video Header ***/
 
-    /*** Video Header ***/
+  .video-header-content h1:nth-child(2) {
+    margin-top: -11.2px;
+  }
 
-    .video-header-content h1:nth-child(2) 
-    { 
-        margin-top: -11.2px;
-    }
+  .video-header-content .subheading {
+    max-width: 420px;
+    font-size: 18px;
+  }
 
-    .video-header-content .subheading { 
-        max-width: 420px;
-        font-size: 18px;
-    }
+  .word-flip span {
+    left: 104px;
+    width: 340px;
+    text-indent: 8px;
+  }
 
-    .word-flip span { 
-        left: 104px;
-        width: 340px; 
-        text-indent: 8px;
-    }
+  /*** End - Video Header ***/
 
-     /*** End - Video Header ***/
+  /*** Video Carousel ***/
 
-     /*** Video Carousel ***/ 
+  .video-carousel-container {
+    padding: 56px;
+  }
 
-    .video-carousel-container { padding: 56px; }
+  .video-carousel-btn img {
+    width: 24px;
+  }
 
-    .video-carousel-btn img { width: 24px; }
+  .btn-left {
+    left: 24px;
+  }
+  .btn-right {
+    right: 24px;
+  }
 
-    .btn-left { left: 24px; }
-    .btn-right { right: 24px; }
+  .video-carousel-nav {
+    bottom: -10px;
+    width: calc(100% - 112px);
+  }
 
-    .video-carousel-nav {
-        bottom: -10px; 
-        width: calc(100% - 112px); 
-    }
+  .video-carousel-nav .active {
+    width: 13px;
+    height: 13px;
+  }
 
-        .video-carousel-nav .active {
-            width: 13px;
-            height: 13px;
-        }
+  .carousel-indicator {
+    width: 12px;
+    height: 12px;
+  }
 
-    .carousel-indicator {
-        width: 12px;
-        height: 12px;
-    }
+  /*** End - Video Carousel ***/
 
-    /*** End - Video Carousel ***/
+  /*** Profile Section ***/
 
-    /*** Profile Section ***/
+  .play-btn-header {
+    margin-top: 28px;
+  }
+  .play-btn-header img {
+    width: 40px;
+  }
+  .play-btn-header span {
+    font-size: 20px;
+  }
 
-    .play-btn-header { margin-top: 28px; }
-        .play-btn-header img { width: 40px; }
-        .play-btn-header span { font-size: 20px; }
+  .profile {
+    min-width: 225px;
+  }
 
-    .profile { min-width: 225px; }
+  .profile-content {
+    min-height: 100px;
+    margin-top: 50px;
+  }
 
-    .profile-content { 
-        min-height: 100px; 
-        margin-top: 50px;
-    }
+  #profile2 {
+    order: 1;
+  }
+  #profileContent2 {
+    order: 2;
+  }
 
-    #profile2 { order: 1; }
-    #profileContent2 { order: 2; }
+  /*** End - Profile Section ***/
 
-    /*** End - Profile Section ***/
-    
-    .video-wrapper { padding: 0 10%; }
+  .video-wrapper {
+    padding: 0 10%;
+  }
 
-    .bg-section5 h4 { font-size: 20px; }
-
-    .disclaimer { -webkit-padding-after: 60px; }
+  .bg-section5 h4 {
+    font-size: 20px;
+  }
 }
 
 /**********************************************************/
@@ -299,79 +361,101 @@
 /**********************************************************/
 
 @media (max-width: 480px) {
+  .container {
+    padding: 100px 8%;
+  }
 
-    .container { padding: 100px 8%; }
+  h1 {
+    font-size: 30px;
+    line-height: 1.15;
+  }
 
-    h1 { 
-        font-size: 30px; 
-        line-height: 1.15;
-    }
+  h2 {
+    font-size: 24px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  h5 {
+    font-size: 16px;
+  }
+  p {
+    font-size: 16px;
+  }
 
-    h2 { font-size: 24px; }
-    h4 { font-size: 18px; }
-    h5 { font-size: 16px; }
-    p { font-size: 16px; } 
+  .video-header,
+  #headerVideo {
+    height: 420px !important;
+  }
 
-    .video-header,
-    #headerVideo 
-    { 
-        height: 420px !important; 
-    }
+  .video-header-content {
+    top: 60px;
+    left: 8%;
+  }
 
-    .video-header-content { 
-        top: 60px; 
-        left: 8%; 
-    }
+  .video-header-content h1:nth-child(2) {
+    margin-top: -8px;
+  }
 
-        .video-header-content h1:nth-child(2) 
-        { 
-            margin-top: -8px;
-        }
+  .video-header-content .subheading {
+    max-width: 80%;
+    font-size: 17px;
+  }
 
-        .video-header-content .subheading { 
-            max-width: 80%; 
-            font-size: 17px;
-        }
+  .word-flip span {
+    left: 74px;
+    width: 240px;
+    text-indent: 6px;
+  }
 
-    .word-flip span { 
-        left: 74px;
-        width: 240px; 
-        text-indent: 6px;
-    }
-    
-    .play-btn-header { margin-top: 22px; }
-        .play-btn-header img { width: 32px; }
-        .play-btn-header span { font-size: 18px; }
+  .play-btn-header {
+    margin-top: 22px;
+  }
+  .play-btn-header img {
+    width: 32px;
+  }
+  .play-btn-header span {
+    font-size: 18px;
+  }
 
-    .profile { 
-        min-width: 170px; 
-        min-height: 170px;
-    }
+  .profile {
+    min-width: 170px;
+    min-height: 170px;
+  }
 
-        .profile img {
-            width: 170px;
-            height: 170px;
-        }
-    
-    #profileInfo1,
-    #profileInfo3
-    {
-        top: 100px;
-        left: 120px;
-    }
+  .profile img {
+    width: 170px;
+    height: 170px;
+  }
 
-    #profileInfo2 {
-        top: 100px;
-        right: 120px;
-    }
+  #profileInfo1,
+  #profileInfo3 {
+    top: 100px;
+    left: 120px;
+  }
 
-    .play-btn-profile { margin-top: 22px; }
-        .play-btn-profile img { width: 25px; }
-        .play-btn-profile span { font-size: 16px; }
+  #profileInfo2 {
+    top: 100px;
+    right: 120px;
+  }
 
-    .bg-section5 h4 { font-size: 18px; }
+  .play-btn-profile {
+    margin-top: 22px;
+  }
+  .play-btn-profile img {
+    width: 25px;
+  }
+  .play-btn-profile span {
+    font-size: 16px;
+  }
 
-    .disclaimer p { font-size: 10px; }
+  .bg-section5 h4 {
+    font-size: 18px;
+  }
+
+  .disclaimer p {
+    font-size: 10px;
+  }
 }
 
 /**********************************************************/
@@ -383,62 +467,68 @@
 /**********************************************************/
 
 @media (max-width: 350px) {
+  .container {
+    padding: 80px 5%;
+  }
 
-    .container { padding: 80px 5%; }
-    
-    h1 { font-size: 26px; }
+  h1 {
+    font-size: 26px;
+  }
 
-    .video-header,
-    #headerVideo 
-    { 
-        height: 380px !important; 
-    }
+  .video-header,
+  #headerVideo {
+    height: 380px !important;
+  }
 
-    .video-header-content { left: 5%; }
+  .video-header-content {
+    left: 5%;
+  }
 
-        .video-header-content h1:nth-child(2) 
-        { 
-            margin-top: -7.3px;
-        }
+  .video-header-content h1:nth-child(2) {
+    margin-top: -7.3px;
+  }
 
-        .video-header-content .subheading 
-        { 
-            font-size: 16px;
-        }
+  .video-header-content .subheading {
+    font-size: 16px;
+  }
 
-    .word-flip span {
-        left: 64px; 
-        width: 210px; 
-    }
+  .word-flip span {
+    left: 64px;
+    width: 210px;
+  }
 
-    .play-btn-header span { font-size: 17px; }
+  .play-btn-header span {
+    font-size: 17px;
+  }
 
-    .profile { 
-        min-width: 160px; 
-        min-height: 160px;
-    }
+  .profile {
+    min-width: 160px;
+    min-height: 160px;
+  }
 
-        .profile img {
-            width: 160px;
-            height: 160px;
-        }
+  .profile img {
+    width: 160px;
+    height: 160px;
+  }
 
-    .profile-info { width: 160px; }
+  .profile-info {
+    width: 160px;
+  }
 
-    #profileInfo1,
-    #profileInfo3
-    {
-        top: 95px;
-        left: 110px;
-    }
+  #profileInfo1,
+  #profileInfo3 {
+    top: 95px;
+    left: 110px;
+  }
 
-    #profileInfo2 {
-        top: 95px;
-        right: 110px;
-    }
+  #profileInfo2 {
+    top: 95px;
+    right: 110px;
+  }
 
-    .bg-image-section { height: 400px; }
-
+  .bg-image-section {
+    height: 400px;
+  }
 }
 
 /**********************************************************/

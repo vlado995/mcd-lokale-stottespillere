@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="no">
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-F4X2K9LPJZ"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-F4X2K9LPJZ');
+        </script>
+
+        <!-- Metadata -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="McDonald's Norge: Lokale støttespillere">
+        <meta name="keywords" content="McDonald's, lokal, spons, sponsorater, idrett, lokal, aktivitet, ungdomstilbud, 
+            ungdomsaktivitet, henge, støttespiller, støttespillere, stavanger hockey, haugesund IL, Ås svømming, 
+            haugesund korps, hinna håndball, ÅS IL, ås fotball, Imås, Indre Haugaland rytterklubb, støtte">
+    
+        <!-- Linked CSS Files -->
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+        <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+
+        <title>Lokale støttespillere</title>
+    </head>
+    <body>
+        <!-- Video Header -->
+        <div class="section" id="topHeader">
+            <div class="container-fluid">
+                <div class="video-header">
+                    <div class=video-header-content>
+                        <h1 class="word-flip">
+                            Heng
+                            <span>i svømmehallen,</span>
+                            <span>på fotballbanen,</span>
+                            <span>i hallen,</span>
+                            <span>i stallen,</span>
+                            <span>i korpset,</span>
+                        </h1>
+                        <h1>ikke på McDonalds's.</h1>
+                        <div class="subheading">
+                            Selv om vi er et naturlig møtested for mange unge mennesker har    
+                            de godt av å ha andre steder å henge enn på McDonald's. 
+                        </div>
+                        <div class="wrapper play-btn-header">
+                            <button class="btn play-btn" id="playBtnHeader" onclick="displayCarousel()">
+                                <img src="assets/icons/play_btn.png" alt="Se filmene" />
+                                <span>Se filmene</span>
+                            </button>
+                        </div>
+                    </div>
+                    <video src="https://player.vimeo.com/external/504743250.hd.mp4?s=186d3e2920a2d2db1cf70059ca580b5632affa9f&profile_id=175" 
+                        id="headerVideo" no-controls autoplay loop muted playsinline></video>
+                </div>
+            </div>
+        </div>
+        <!-- End Video Header -->
+
+        <!-- Video Carousel -->
+        <div class="video-showcase" id="showcaseAll">
+            <div class="video-showcase-close">
+                <button class="btn close-btn" id="closeBtn" onclick="closeCarousel()">
+                    <img src="assets/icons/close.png" alt="Close" /> 
+                </button>
+            </div>
+                <div class="video-carousel-container">
+                    <div class="carousel-slide" id="carouselSlide1">
+                        <iframe src="https://www.youtube-nocookie.com/embed/n0Rc_XGy7rk" 
+                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; 
+                            picture-in-picture" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="carousel-slide" id="carouselSlide2">
+                        <iframe src="https://www.youtube-nocookie.com/embed/S-cOV-apkKs" 
+                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; 
+                            picture-in-picture" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="carousel-slide" id="carouselSlide3">
+                        <iframe src="https://www.youtube-nocookie.com/embed/g3ZDdwRrwxE" 
+                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; 
+                            picture-in-picture" frameborder="0" allowfullscreen></iframe>
+                    </div>
+
+                    <!-- Carousel Controls --> 
+                    <button class="btn video-carousel-btn btn-left" onclick="toSlide(-1); playingRules();">
+                        <img src="assets/icons/arrow_left.png" alt="Previous" /> 
+                    </button>
+                    <button class="btn video-carousel-btn btn-right" onclick="toSlide(1); playingRules();">
+                        <img src="assets/icons/arrow_right.png" alt="Next" />
+                    </button>
+
+                    <!-- Carousel Navigation -->
+                    <div class="video-carousel-nav">
+                        <button class="btn carousel-indicator active" onclick="currentSlide(1); playingRules();"></button>
+                        <button class="btn carousel-indicator" onclick="currentSlide(2); playingRules();"></button>
+                        <button class="btn carousel-indicator" onclick="currentSlide(3); playingRules();"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Video Carousel -->
+
+        <!-- Profile Section -->
+        <div class="section" id="section2">
+            <div class="container">
+                <div class="profile" id="profile1">
+                    <img src="assets/profile1.jpg" alt="Eduardo Jacobsen" />
+                    <div class="profile-info" id="profileInfo1">
+                        <h4>Eduardo Jacobsen</h4>
+                        <h5>Restauranteier <br>Ski & Råde</h5>
+                    </div>        
+                </div>
+                <div class="profile-content" id="profileContent1">
+                    <div class="wrapper profile-content-wrapper">
+                        <p>Alle er så klart velkommen inn til mine restauranter her på Østlandet, men ungdom har ikke godt 
+                            av å bare henge her for å henge. Jeg sponser en rekke aktivitetstilbud i nærområdet rundt 
+                            restaurantene mine fordi et aktivt og levende miljø der de unge har et tilbud å gå til fører
+                            til bedre oppvekst og en hyggeligere by for alle. Hovedsakelig for de som bor der, men også 
+                            for oss som har restauranter der. Det er mye av grunnen til hvorfor jeg sponser en rekke 
+                            aktivitetstilbud i nærområdet.</p>
+                        <div class="wrapper play-btn-profile">
+                            <button class=" btn play-btn" id="playBtnProfile1" onclick="displayVideo1()">
+                                <img src="assets/icons/play_btn.png" alt="Se filmen" />
+                                <span>Se filmen</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Profile Section -->
+        
+        <!-- Single Video Preview -->
+        <div class="video-showcase" id="showcase1">
+            <div class="video-showcase-close">
+                <button class="btn close-btn" id="closeBtn" onclick="closeVideo1()">
+                    <img src="assets/icons/close.png" alt="Close" /> 
+                </button>
+            </div>
+            <div class="wrapper video-wrapper">
+                <iframe src="https://www.youtube-nocookie.com/embed/n0Rc_XGy7rk" 
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; 
+                    picture-in-picture" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+        <!-- End Single Video Preview -->
+
+        <!-- Backgound Image Section -->
+        <div class="section" id="section3">
+            <div class="container-fluid">
+                <div class="bg-image-section bg-section3"></div>
+            </div>
+        </div>
+        <!-- End Backgound Image Section -->
+
+        <!-- Profile Section -->
+        <div class="section" id="section4">
+            <div class="container">
+                <div class="profile-content" id="profileContent2">
+                    <div class="wrapper profile-content-wrapper">
+                        <p>Jeg brenner for Haugalandet. Jeg er herfra selv og eier to restauranter i området. Og selv om 
+                            McDonald's er en stor og verdenskjent kjede er restaurantene mine lokale bedrifter. Derfor er 
+                            det også helt naturlig å gi noe tilbake til nærmiljøet. Vi sponser ganske bredt her i området, 
+                            slik at flest mulig skal ha et tilbud å gå til.</p>
+                        <div class="wrapper play-btn-profile">
+                            <button class="btn play-btn" id="playBtnProfile2" onclick="displayVideo2()">
+                                <img src="assets/icons/play_btn.png" alt="Se filmen" />
+                                <span>Se filmen</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile" id="profile2">
+                    <img src="assets/profile2.jpg" alt="Veronika Sørensen" />
+                    <div class="profile-info" id="profileInfo2">
+                        <h4>Veronika Sørensen</h4>
+                        <h5>Restauranteier <br>Haugalandet</h5>
+                    </div>        
+                </div>
+            </div>
+        </div>
+        <!-- End Profile Section -->
+
+        <!-- Single Video Preview -->
+        <div class="video-showcase" id="showcase2">
+            <div class="video-showcase-close">
+                <button class="btn close-btn" id="closeBtn" onclick="closeVideo2()">
+                    <img src="assets/icons/close.png" alt="Close" /> 
+                </button>
+            </div>
+            <div class="wrapper video-wrapper">
+                <iframe src="https://www.youtube-nocookie.com/embed/S-cOV-apkKs" 
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; 
+                    picture-in-picture" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+        <!-- End Single Video Preview -->
+
+        <!-- Backgound Image Section -->
+        <div class="section" id="section5">
+            <div class="container-fluid">
+                <div class="bg-image-section bg-section5">
+                    <div class="section-quote">
+                        <h2>"Det er viktig at ungdom har noe bedre å gjøre enn å bare henge på McDonald's"</h2>
+                        <h4>Ronny Sigbjørnsen</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Backgound Image Section -->
+
+        <!-- Profile Section -->
+        <div class="section" id="section6">
+            <div class="container">
+                <div class="profile" id="profile3">
+                    <img src="assets/profile3.jpg" alt="Ronny Sigbjørnsen" />
+                    <div class="profile-info" id="profileInfo3">
+                        <h4>Ronny Sigbjørnsen</h4>
+                        <h5>Restauranteier <br>Stavanger & Grimstad</h5>
+                    </div>        
+                </div>
+                <div class="profile-content" id="profileContent3">
+                    <div class="wrapper profile-content-wrapper">
+                        <p>Jeg er født og oppvokst i Stavanger og eier i dag flere McDonald's restauranter i området. Vi 
+                            ser jevnlig at unge mennesker bare henger i restaurantene våre. Det er også mye av grunnen til 
+                            at vi sponser en rekke aktiviteter for barn og unge i nærmiljøet. Vi ønsker å være en god nabo 
+                            på de plassene vi har en restaurant, og tror unge folk har bedre av å henge på en 
+                            aktivitetsarena enn hos oss.</p>
+                        <div class="wrapper play-btn-profile">
+                            <button class="btn play-btn" id="playBtnProfile3" onclick="displayVideo3()">
+                                <img src="assets/icons/play_btn.png" alt="Se filmen" />
+                                <span>Se filmen</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Profile Preview -->
+
+        <!-- Single Video Preview -->
+        <div class="video-showcase" id="showcase3">
+            <div class="video-showcase-close">
+                <button class="btn close-btn" id="closeBtn" onclick="closeVideo3()">
+                    <img src="assets/icons/close.png" alt="Close" /> 
+                </button>
+            </div>
+            <div class="wrapper video-wrapper">
+                <iframe src="https://www.youtube-nocookie.com/embed/g3ZDdwRrwxE" 
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; 
+                    picture-in-picture" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+        <!-- End Single Video Preview -->
+
+        <!-- Footer Disclaimer -->
+        <div class="footer">
+            <div class="container">
+                <div class="disclaimer">
+                    <p>Vi oppfordrer til at man til enhver tid følger nasjonale retningslinjer og regler, samt lokale 
+                        retningslinjer i forbindelse med Covid-19.</p> 
+                </div>
+            </div>
+        </div>
+        <!-- End Footer Disclaimer -->
+
+        <!-- Linked JavaScript files -->
+        <script src="scripts/video_showcase.js"></script>
+        <script src="scripts/video_carousel.js"></script>
+    </body>
+</html>
